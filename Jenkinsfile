@@ -1,9 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        IMAGE = "lavanyapc/bluegreen-node-app"
-    }
+   environment {
+    PATH = "/usr/local/bin:/opt/homebrew/bin:${env.PATH}"
+    IMAGE = "lavanyapc/bluegreen-node-app"
+}
 
     stages {
 
